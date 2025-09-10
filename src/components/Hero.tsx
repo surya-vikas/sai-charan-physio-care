@@ -19,7 +19,9 @@ const Hero = () => {
         <div className="max-w-3xl animate-fade-in">
           <h1 className="font-poppins text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
             Compassionate Physiotherapy &{" "}
-            <span className="text-gradient">Neurological Rehabilitation</span>
+            <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent inline-block">
+              Neurological Rehabilitation
+            </span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
