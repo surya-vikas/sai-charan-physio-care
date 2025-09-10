@@ -4,23 +4,30 @@
   padding: 2rem;
   text-align: center;
 }
-/* Hide scrollbar for Chrome, Safari, Edge */
+
+/* ✅ Hide scrollbar globally */
+
+/* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* optional: just to be safe */
+  width: 0;
+  height: 0;
 }
 
-/* Hide scrollbar for Firefox */
+/* Firefox */
 * {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge (older) */
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE & Edge (older) */
 }
 
-/* Ensure scrolling still works */
+/* Ensure scrolling still works without showing scrollbar */
 html, body {
-  overflow: auto;
+  overflow-y: scroll;  /* force scroll but hidden */
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -34,6 +41,7 @@ html, body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Spin animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
